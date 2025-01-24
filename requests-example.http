@@ -1,0 +1,37 @@
+# примеры API-запросов
+
+@baseUrl = http://127.0.0.1:8080
+
+# создание user
+POST  {{baseUrl}}/user/
+Content-Type: application/json
+
+{
+  "name": "Ivan",
+  "password": "password"
+}
+
+### 
+
+# получение user
+
+GET  {{baseUrl}}/user/1/
+Content-Type: application/json
+
+###
+
+# обновление user 
+
+PATCH  {{baseUrl}}/user/1/
+Content-Type: application/json
+
+{
+  "name": "Ivan_new"
+}
+
+###
+
+# Удаление user 
+
+DELETE  {{baseUrl}}/user/1/
+Content-Type: application/json
