@@ -7,22 +7,21 @@ POST  {{baseUrl}}/user/
 Content-Type: application/json
 
 {
-  "name": "Ivan",
-  "password": "password"
+  "name": "Yra"
 }
 
 ### 
 
 # получение user
 
-GET  {{baseUrl}}/user/1/
+GET  {{baseUrl}}/user/2/
 Content-Type: application/json
 
 ###
 
 # обновление user 
 
-PATCH  {{baseUrl}}/user/1/
+PATCH  {{baseUrl}}/user/2/
 Content-Type: application/json
 
 {
@@ -34,4 +33,43 @@ Content-Type: application/json
 # Удаление user 
 
 DELETE  {{baseUrl}}/user/1/
+Content-Type: application/json
+
+###
+
+# создание advertisement
+POST  {{baseUrl}}/advertisement/
+Content-Type: application/json
+
+{
+  "heading": "Ivan_new_1",
+  "description": "11111111111",
+  "user_id": 2
+}
+
+### 
+
+# получение advertisement
+
+GET  {{baseUrl}}/advertisement/4/
+Content-Type: application/json
+
+###
+
+# обновление advertisement 
+
+PATCH  {{baseUrl}}/advertisement/4/
+Content-Type: application/json
+
+{
+  "heading": "1111111111111",
+  "description": "11111111111111111111111",
+  "user_id": 2
+}
+
+###
+
+# Удаление advertisement 
+
+DELETE  {{baseUrl}}/advertisement/2/
 Content-Type: application/json
